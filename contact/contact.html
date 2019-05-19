@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Karen Fletcher - Contact</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body class="l-body">
-    <div class="main-nav">
-      <ul class="nav__menu">
-        <li class="nav__menu-name">Karen Fletcher</li>
-        <li class="nav__menu-item"><a href="index.html">Home</a></li>
-        <li class="nav__menu-item"><a href="work/work.html">Work</a></li>
-        <li class="nav__menu-item"><a href="volunteer/volunteer.html">Volunteerism</a></li>
-        <li class="nav__menu-item"><a href="contact/contact.html">Contact</a></li>
-      </ul>
-    </div>
 
-    <p>Contact</p>
+<head>
+  <meta charset="utf-8">
+  <title>Karen Fletcher - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-    <header class="l-header"></header>
+<body class="l-body">
+  <div class="main-nav">
+    <ul class="nav__menu">
+      <li class="nav__menu-name">Karen Fletcher</li>
+      <li class="nav__menu-item"><a href="../index.html">Home</a></li>
+      <li class="nav__menu-item"><a href="../work/work.html">Work</a></li>
+      <li class="nav__menu-item"><a href="../volunteer/volunteer.html">Volunteerism</a></li>
+      <li class="nav__menu-item"><a href="#">Contact</a></li>
+    </ul>
+  </div>
 
-    <main class="l-main"></main>
+  <header class="l-header">
+    <h1>Contact</h1>
+    <p>If you like my portfolio, feel free to reach out to me on social media or send me an email!</p>
+  </header>
 
-  </body>
+  <main class="l-main">
+    <form action="mailto:knpfletcher@gmail.com" method="GET" target="_blank">
+      <div class="field">
+        <label class="label" for="subject"> Subject</label>
+        <input name="subject" id="subject" type="text" class="input" value="Subject">
+      </div>
+      <div class="field"><label class="label" for="body">Body</label>
+        <textarea class="textarea" name="body" id="body">Body</textarea>
+      </div>
+      <div>
+        <input type="submit" value="Send Email">
+      </div>
+    </form>
+
+    <ul>
+      <li a href="https://twitter.com/knpfletcher" target="_blank">twitter.com/knpfletcher</a></li>
+      <li a href="https://github.com/knpFletcher" target="_blank">github.com/knpFletcher</a></li>
+      <li a href="https://codepen.io/knpfletcher" target="_blank">codepen.io/knpfletcher</a></li>
+    </ul>
+  </main>
+
+  <footer class="l-footer">
+     <p class="copyright">&copy; <script>
+         document.write(new Date().getFullYear());
+       </script>, Karen Fletcher</p>
+   </footer>
+
+</body>
+
 </html>
