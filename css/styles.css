@@ -11,6 +11,10 @@ body {
   color: var(--text-dark);
 }
 
+a {
+  color: var(--text-dark);
+}
+
 /* Headings */
 .divider__year,
 .header__title,
@@ -25,7 +29,8 @@ body {
 }
 
 .header__title,
-.main__heading {
+.main__heading,
+.nav__menu-name {
   font-size: 48px;
 }
 
@@ -41,6 +46,10 @@ body {
 
 .work__year {
   font-size: 32px;
+}
+
+.nav__section {
+  font-size: 24px;
 }
 
 /* Content */
