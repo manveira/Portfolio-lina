@@ -1,3 +1,6 @@
+/* TODO:
+link hover/focus color / anim?  - esp nav
+*/
 /* Document Styles */
 :root {
   --text-dark: #200F63;
@@ -55,11 +58,12 @@ a {
 /* Content */
 .date,
 .description,
+.footer__social
 .header__body--description,
 .header__description,
 .main__description,
 .main__link,
-.social,
+.social__item,
 .work__goal,
 .work__link,
 .work__tech-stack {
@@ -89,7 +93,7 @@ a {
 }
 
 .nav__section,
-.social__section {
+.footer__social-section {
   display: block;
 }
 
@@ -98,8 +102,9 @@ a {
   font-size: .65em;
 }
 
+.footer__social,
 .nav__menu,
-.social {
+.social__item {
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -134,7 +139,7 @@ a {
 }
 
 /* Main */
-.l-main {
+.l-main__experience {
   display: block;
   margin: 10%;
 }
@@ -142,11 +147,6 @@ a {
 .main__link-group {
   align-items: center;
   display: flex;
-}
-
-.main__icon {
-  min-height: 50px;
-  padding-right: 5%;
 }
 
 .work__professional-item,
@@ -181,17 +181,30 @@ a {
   margin-top: 10%;
 }
 
+address > .social__items {
+  font-style: normal;
+}
+
+.social__items {
+  padding-left: 5%;
+}
+
+.social__item {
+  align-items: center;
+  padding: 2%;
+}
+
 /* Footer */
 .l-footer {
   justify-content: space-evenly;
   min-height: 140px;
 }
 
-.social__section {
+.footer__social-section {
   display: block;
 }
 
-.social {
+.footer__social {
   justify-content: space-between;
 }
 
@@ -208,7 +221,13 @@ a {
   margin: 0;
 }
 
+.main__icon,
 .social__icon {
+  min-height: 50px;
+  padding-right: 5%;
+}
+
+.footer__social-icon {
   margin: 0 .5em;
   min-height: 30px;
 }
@@ -249,13 +268,13 @@ a {
   }
 
   /* Main */
-  .l-main--home,
+  .l-main,
   .work__personal-items ,
   .header__body {
     display: grid;
   }
 
-  .l-main--home,
+  .l-main,
   .header__body {
     align-items: center;
     column-gap: 10%;
@@ -263,14 +282,15 @@ a {
     grid-column-gap: 10%;
   }
 
-  .l-main--home {
+  .l-main {
     margin: 5%;
   }
 
-  .l-main {
+  .l-main__experience {
     margin: 5% 15% 10%;
   }
 
+  .main__contact,
   .main__copy,
   .main__image,
   .header__body--description,
