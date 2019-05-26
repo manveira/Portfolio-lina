@@ -63,4 +63,56 @@ body {
   font-size: 24px;
 }
 
+/* Navigation */
+.main-nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 70px;
+  overflow: hidden;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.nav__section {
+  display: block;
+  line-height: 1.8;
+  font-size: .65em;
+  margin: .5em 1em 0;
+}
+
+.nav__menu {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__menu-item {
+  margin: 0 1em;
+}
+
+.nav__menu-item a, .nav__menu-name {
+  text-decoration: none;
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 768px) {
+  .main-nav {
+    flex-direction: row;
+    padding: 20px 100px;
+  }
+
+  .nav__section {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+
+
+}
 
