@@ -118,30 +118,6 @@ a {
   text-decoration: none;
 }
 
-/* Footer */
-.l-footer {
-  justify-content: space-evenly;
-  min-height: 140px;
-}
-
-.social__section {
-  display: block;
-}
-
-.social {
-  justify-content: space-between;
-}
-
-.social__icon {
-  margin: 0 .5em;
-  min-height: 30px;
-}
-
-.copyright {
-  margin: 0;
-  padding: 0;
-}
-
 /* Heading */
 .header__title, .header__description {
   text-align: center;
@@ -195,6 +171,30 @@ a {
 
 .work__tech-stack {
   margin: 5% 0 0;
+}
+
+/* Footer */
+.l-footer {
+  justify-content: space-evenly;
+  min-height: 140px;
+}
+
+.social__section {
+  display: block;
+}
+
+.social {
+  justify-content: space-between;
+}
+
+.social__icon {
+  margin: 0 .5em;
+  min-height: 30px;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
 }
 
 
