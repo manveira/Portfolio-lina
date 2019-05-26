@@ -73,10 +73,13 @@ a {
 }
 
 /* Navigation */
-.main-nav {
+.main-nav, .l-footer {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.main-nav {
   justify-content: space-between;
   min-height: 70px;
   overflow: hidden;
@@ -84,30 +87,61 @@ a {
   text-align: center;
 }
 
-.nav__section {
+.nav__section,
+.social__section {
   display: block;
+}
+
+.nav__section {
   line-height: 1.8;
   font-size: .65em;
   margin: .5em 1em 0;
 }
 
-.nav__menu {
-  align-items: center;
+.nav__menu,
+.social {
   display: flex;
-  height: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.nav__menu-item {
-  margin: 0 1em;
+.nav__menu {
+  align-items: center;
 }
 
-.nav__menu-item a, .nav__menu-name {
+.nav__menu-item {
+  margin: 0 .5em;
+}
+
+.nav__menu-item a,
+.nav__menu-name {
   text-decoration: none;
 }
 
+/* Footer */
+.l-footer {
+  justify-content: space-evenly;
+  min-height: 140px;
+}
+
+.social__section {
+  display: block;
+}
+
+.social {
+  justify-content: space-between;
+}
+
+.social__icon {
+  margin: 0 1em;
+  min-height: 30px;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 768px) {
@@ -120,8 +154,7 @@ a {
     font-size: 1em;
     margin-top: 0;
   }
-
-
-
 }
 
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {}
