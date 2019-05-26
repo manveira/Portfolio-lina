@@ -83,7 +83,7 @@ a {
   justify-content: space-between;
   min-height: 70px;
   overflow: hidden;
-  padding: 20px 20px;
+  padding: 1.5%;
   text-align: center;
 }
 
@@ -95,7 +95,6 @@ a {
 .nav__section {
   line-height: 1.8;
   font-size: .65em;
-  margin: .5em 1em 0;
 }
 
 .nav__menu,
@@ -134,7 +133,7 @@ a {
 }
 
 .social__icon {
-  margin: 0 1em;
+  margin: 0 .5em;
   min-height: 30px;
 }
 
@@ -166,17 +165,26 @@ a {
 
 /* Desktop Styles */
 @media only screen and (min-width: 768px) {
+
+  /* Navigation */
   .main-nav {
     flex-direction: row;
-    padding: 20px 100px;
+    padding: 1.5% 8%;
   }
 
   .nav__section {
     font-size: 1em;
     margin-top: 0;
+    min-width: 500px;
+  }
+
+  .nav__menu {
+    justify-content: space-between;
+  }
 
   /* Content */
   .l-main {
+    align-items: center;
     column-gap: 10%;
     display: grid;
     grid-auto-columns: 1fr;
