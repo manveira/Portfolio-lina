@@ -152,6 +152,16 @@ a {
   padding-right: 5%;
 }
 
+.work__professional-item,
+.work__personal-item {
+  margin-bottom: 15%;
+}
+
+.professional__img,
+.personal__img {
+  max-width: 100%;
+}
+
 .work__title {
   margin-bottom: 0;
 }
@@ -266,8 +276,8 @@ a {
   }
 
   .work__personal-items {
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 10%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
