@@ -102,8 +102,8 @@ a {
 }
 
 .nav__section {
-  line-height: 1.8;
   font-size: .65em;
+  line-height: 1.8;
 }
 
 .footer__social,
@@ -201,7 +201,7 @@ address > .social__items {
 
 /* Footer */
 .l-footer {
-  justify-content: space-evenly;
+  justify-content: center;
   min-height: 140px;
 }
 
@@ -210,6 +210,7 @@ address > .social__items {
 }
 
 .footer__social {
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -354,7 +355,6 @@ address > .social__items {
   .social__icon {
     min-height: 50px;
   }
-
 }
 
 /* Dark Mode */
