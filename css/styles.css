@@ -58,7 +58,7 @@ a {
 /* Content */
 .date,
 .description,
-.footer__social
+.footer__social,
 .header__body--description,
 .header__description,
 .main__description,
@@ -75,6 +75,10 @@ a {
 .main-nav {
   background: var(--background-header-footer);
   font-size: 24px;
+}
+
+.l-main {
+  margin: 10%;
 }
 
 /* Navigation */
@@ -186,7 +190,8 @@ address > .social__items {
 }
 
 .social__items {
-  padding-left: 5%;
+  padding: 0;
+  word-break: break-all;
 }
 
 .social__item {
@@ -221,10 +226,17 @@ address > .social__items {
   margin: 0;
 }
 
+.main__icon {
+  min-height: 50px;
+}
+
 .main__icon,
 .social__icon {
-  min-height: 50px;
   padding-right: 5%;
+}
+
+.social__icon {
+  min-height: 30px;
 }
 
 .footer__social-icon {
@@ -333,6 +345,14 @@ address > .social__items {
 
   .codepen {
     margin-left: 0;
+  }
+
+  .social__items {
+    word-break: break-word;
+  }
+
+  .social__icon {
+    min-height: 50px;
   }
 
 }
