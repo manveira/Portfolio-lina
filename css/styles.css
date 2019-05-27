@@ -134,7 +134,10 @@ a {
 }
 
 /* Heading */
-.header__title, .header__description {
+.header__description,
+.header__title,
+.main__heading,
+.main__link-group {
   text-align: center;
 }
 
@@ -191,7 +194,7 @@ a {
   margin-top: 10%;
 }
 
-address>.social__items {
+address > .social__items {
   font-style: normal;
 }
 
@@ -323,6 +326,12 @@ address>.social__items {
 
   .main__heading {
     margin-top: 0;
+    text-align: left;
+  }
+
+  .main__heading,
+  .main__link-group {
+    text-align: left;
   }
 
   .main__copy {
