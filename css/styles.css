@@ -1,18 +1,17 @@
 /* Document Styles */
 :root {
-  --text-dark: #200F63;
+  --text: #200F63;
   --background-page: #E7EFFD;
   --background-header-footer: #DA627D;
-  --accent: #9A348E;
 }
 
 body {
   background: var(--background-page);
-  color: var(--text-dark);
+  color: var(--text);
 }
 
 a {
-  color: var(--text-dark);
+  color: var(--text);
 }
 
 /* Headings */
@@ -187,7 +186,7 @@ a {
 }
 
 .divider__year {
-  border-bottom: 2px solid var(--text-dark);
+  border-bottom: 2px solid var(--text);
   line-height: 2;
   margin-top: 10%;
 }
@@ -375,10 +374,6 @@ address>.social__items {
     min-height: 50px;
   }
 }
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {}
-
 
 /* Reduced Motion */
 @media screen and (prefers-reduced-motion: reduce) {
