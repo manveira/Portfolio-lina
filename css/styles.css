@@ -139,6 +139,7 @@ a {
 
 .header__description,
 .header__body {
+  line-height: 1.4;
   margin: 0 10%;
 }
 
@@ -166,7 +167,7 @@ a {
 .work__tech-stack,
 .work__goal,
 .work__link {
-  line-height: 1.7;
+  line-height: 1.4;
 }
 
 .work__year,
@@ -185,7 +186,7 @@ a {
   margin-top: 10%;
 }
 
-address > .social__items {
+address>.social__items {
   font-style: normal;
 }
 
@@ -251,7 +252,6 @@ address > .social__items {
   margin-left: 0;
 }
 
-
 /* Desktop Styles */
 @media only screen and (min-width: 768px) {
 
@@ -287,7 +287,7 @@ address > .social__items {
 
   /* Main */
   .l-main,
-  .work__personal-items ,
+  .work__personal-items,
   .header__body {
     display: grid;
   }
@@ -340,6 +340,13 @@ address > .social__items {
   .work__personal-items {
     column-gap: 10%;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work__year,
+  .work__tech-stack,
+  .work__goal,
+  .work__link {
+    line-height: 1.7;
   }
 
   .professional__img {
