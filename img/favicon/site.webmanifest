@@ -1,6 +1,6 @@
 {
-    "name": "Karen Fletcher",
-    "short_name": "Karen Fletcher",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/android-chrome-36x36.png",
@@ -38,7 +38,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#fff",
-    "background_color": "#fff",
+    "theme_color": "#e7effd",
+    "background_color": "#e7effd",
     "display": "standalone"
 }
