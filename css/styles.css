@@ -166,7 +166,7 @@ a {
 .work__tech-stack,
 .work__goal,
 .work__link {
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .work__year,
@@ -276,6 +276,11 @@ address > .social__items {
     margin: 0 20%;
   }
 
+  .header__body--description,
+  .header__description {
+    line-height: 1.3;
+  }
+
   .header__body {
     margin: 0 15%;
   }
@@ -317,6 +322,7 @@ address > .social__items {
 
   .main__copy {
     display: block;
+    line-height: 1.4;
   }
 
   .main__icon {
