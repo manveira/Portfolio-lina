@@ -197,6 +197,10 @@ a {
   margin-top: 10%;
 }
 
+.experience {
+  padding: .5% 0;
+}
+
 address > .social__items {
   font-style: normal;
 }
@@ -316,7 +320,7 @@ address > .social__items {
   }
 
   .l-main__experience {
-    margin: 5% 15% 10%;
+    margin: 0 15% 5%;
   }
 
   .main__contact,
