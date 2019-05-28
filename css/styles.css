@@ -350,8 +350,9 @@ address > .social__items {
     padding-right: 2%;
   }
 
-  .personal {
-    margin-top: 20%;
+  .work__personal,
+  .work__professional {
+    margin-top: 10%;
   }
 
   .work__tech-stack {
