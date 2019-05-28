@@ -5,13 +5,16 @@
   --background-header-footer: #DA627D;
 }
 
-body {
-  background: var(--background-page);
+a {
   color: var(--text);
 }
 
-a {
+.l-body {
+  background: var(--background-page);
   color: var(--text);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* Headings */
