@@ -5,13 +5,16 @@
   --background-header-footer: #DA627D;
 }
 
-body {
-  background: var(--background-page);
+a {
   color: var(--text);
 }
 
-a {
+.l-body {
+  background: var(--background-page);
   color: var(--text);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* Headings */
@@ -194,6 +197,10 @@ a {
   margin-top: 10%;
 }
 
+.experience {
+  padding: .5% 0;
+}
+
 address > .social__items {
   font-style: normal;
 }
@@ -313,7 +320,7 @@ address > .social__items {
   }
 
   .l-main__experience {
-    margin: 5% 15% 10%;
+    margin: 0 15% 5%;
   }
 
   .main__contact,
@@ -343,8 +350,9 @@ address > .social__items {
     padding-right: 2%;
   }
 
-  .personal {
-    margin-top: 20%;
+  .work__personal,
+  .work__professional {
+    margin-top: 10%;
   }
 
   .work__tech-stack {
