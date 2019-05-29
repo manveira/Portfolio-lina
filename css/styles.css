@@ -298,7 +298,7 @@ address > .social__items {
     justify-content: space-between;
   }
 
-  /* Header */
+  /* Heading */
   .header__description {
     margin: 0 20%;
   }
@@ -358,10 +358,6 @@ address > .social__items {
     line-height: 1.4;
   }
 
-  .main__icon {
-    padding-right: 2%;
-  }
-
   .work__personal,
   .work__professional {
     margin-top: 10%;
@@ -381,6 +377,11 @@ address > .social__items {
   .work__goal,
   .work__link {
     line-height: 1.7;
+  }
+
+  /* Images */
+  .main__icon {
+    padding-right: 2%;
   }
 
   .professional__img {
