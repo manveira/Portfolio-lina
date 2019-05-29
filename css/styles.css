@@ -81,13 +81,25 @@ a {
 }
 
 /* Navigation */
-.nav__menu-item a {
-  transition: all .6s;
+.nav__menu-item {
+  position: relative;
 }
 
-.nav__menu-item a:hover,
-.nav__menu-item a:focus {
-  color: var(--background-page);
+.nav__menu-item::before {
+  background-color: var(--background-page);
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 53%;
+  position: absolute;
+  width: 100%;
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav__menu-item:hover::before {
+  transform: translate(-50%, 0) scaleX(1);
 }
 
 .main-nav, .l-footer {
@@ -394,7 +406,9 @@ address > .social__items {
 
 /* Reduced Motion */
 @media screen and (prefers-reduced-motion: reduce) {
-  .nav__menu-item a {
+
+  /* Navigation */
+  .nav__menu-item::before {
     transition: none;
   }
 }
