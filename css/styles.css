@@ -205,7 +205,8 @@ a {
   margin: 5% 0 0;
 }
 
-.divider__year {
+.divider__year,
+.main__work {
   border-bottom: 2px solid var(--text);
   line-height: 2;
   margin-top: 10%;
