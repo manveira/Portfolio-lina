@@ -63,6 +63,7 @@ a {
 .main__description,
 .main__link,
 .social__item,
+.work__code,
 .work__goal,
 .work__link,
 .work__tech-stack {
@@ -189,13 +190,14 @@ a {
 .work__year,
 .work__tech-stack,
 .work__goal,
-.work__link {
+.work__code {
   line-height: 1.4;
 }
 
 .work__year,
 .work__goal,
-.work__link {
+.work__link,
+.work__code {
   margin: 0;
 }
 
@@ -375,7 +377,8 @@ address > .social__items {
   .work__year,
   .work__tech-stack,
   .work__goal,
-  .work__link {
+  .work__link,
+  .work__code {
     line-height: 1.7;
   }
 
