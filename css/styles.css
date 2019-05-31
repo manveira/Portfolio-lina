@@ -66,7 +66,8 @@ a {
 .work__code,
 .work__goal,
 .work__link,
-.work__tech-stack {
+.work__tech-stack,
+.work__design {
   font-family: 'Quicksand', sans-serif;
   font-size: 24px;
 }
@@ -189,6 +190,7 @@ a {
 
 .work__year,
 .work__tech-stack,
+.work__design,
 .work__goal,
 .work__code {
   line-height: 1.4;
@@ -201,7 +203,8 @@ a {
   margin: 0;
 }
 
-.work__tech-stack {
+.work__tech-stack,
+.work__design {
   margin: 5% 0 0;
 }
 
@@ -365,7 +368,8 @@ address > .social__items {
     margin-top: 10%;
   }
 
-  .work__tech-stack {
+  .work__tech-stack,
+  .work__design {
     margin: 2% 0 0;
   }
 
@@ -376,6 +380,7 @@ address > .social__items {
 
   .work__year,
   .work__tech-stack,
+  .work__design,
   .work__goal,
   .work__link,
   .work__code {
