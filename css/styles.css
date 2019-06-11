@@ -82,6 +82,11 @@ a {
   margin: 10%;
 }
 
+.l-main.contact {
+    margin: 5%;
+    overflow: hidden;
+}
+
 /* Navigation */
 .nav__menu-item {
   position: relative;
@@ -165,6 +170,7 @@ a {
 .header__body {
   line-height: 1.4;
   margin: 0 10%;
+  text-align: left;
 }
 
 /* Main */
@@ -307,6 +313,7 @@ address > .social__items {
   /* Heading */
   .header__description {
     margin: 0 20%;
+    text-align: center;
   }
 
   .header__body--description,
@@ -338,7 +345,7 @@ address > .social__items {
   }
 
   .l-main.contact {
-    margin-top: 0;
+    margin: 0 10% 10%;
   }
 
   .l-main__experience {
