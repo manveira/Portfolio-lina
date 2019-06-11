@@ -129,8 +129,7 @@ a {
 }
 
 .footer__social,
-.nav__menu,
-.social__item {
+.nav__menu {
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -225,11 +224,10 @@ address > .social__items {
 
 .social__items {
   padding: 0;
-  word-break: break-all;
 }
 
 .social__item {
-  align-items: center;
+  display: table;
   padding: 2%;
 }
 
@@ -271,7 +269,9 @@ address > .social__items {
 }
 
 .social__icon {
+  display: block;
   min-height: 30px;
+  padding-bottom: 2%;
 }
 
 .footer__social-icon {
@@ -391,6 +391,11 @@ address > .social__items {
     line-height: 1.7;
   }
 
+  .social__item {
+    display: flex;
+    align-items: center;
+  }
+
   /* Images */
   .main__icon {
     padding-right: 2%;
@@ -408,12 +413,9 @@ address > .social__items {
     margin-left: 0;
   }
 
-  .social__items {
-    word-break: break-word;
-  }
-
   .social__icon {
     min-height: 50px;
+    padding-bottom: 0;
   }
 }
 
