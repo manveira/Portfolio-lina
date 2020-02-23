@@ -19,6 +19,27 @@ a {
 }
 
 /* Headings */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.copyright,
 .divider__year,
 .header__title,
 .l-footer,
@@ -28,31 +49,11 @@ a {
 .organization,
 .work__title,
 .work__year {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.header__title,
-.main__heading,
-.nav__menu-name {
-  font-size: 48px;
-}
-
-.divider__year,
-.main__work {
-  font-size: 44px;
-}
-
-.organization,
-.work__title {
-  font-size: 36px;
-}
-
-.work__year {
-  font-size: 32px;
-}
-
-.nav__section {
-  font-size: 24px;
+.nav__menu-name{
+  font-size: 2rem;
 }
 
 /* Content */
@@ -61,6 +62,7 @@ a {
 .footer__social,
 .header__body--description,
 .header__description,
+.l-footer,
 .main__description,
 .main__link,
 .social__item,
@@ -69,14 +71,13 @@ a {
 .work__link,
 .work__tech-stack,
 .work__design {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
 }
 
 .l-footer,
 .main-nav {
   background: var(--background-header-footer);
-  font-size: 24px;
 }
 
 .l-main {
@@ -84,8 +85,8 @@ a {
 }
 
 .l-main.contact {
-    margin: 5%;
-    overflow: hidden;
+  margin: 5%;
+  overflow: hidden;
 }
 
 /* Navigation */
@@ -130,7 +131,6 @@ a {
 }
 
 .nav__section {
-  font-size: .65em;
   line-height: 1.8;
 }
 
@@ -261,7 +261,7 @@ address > .social__items {
 }
 
 .copyright {
-  margin: 0;
+  margin: 15px 0;
   padding: 0;
 }
 
@@ -285,12 +285,11 @@ address > .social__items {
 .social__icon {
   display: block;
   fill: var(--text-dark);
-  padding-bottom: 2%;
 }
 
 .footer__social-icon {
   margin: 0 .5em;
-  min-height: 30px;
+  min-height: 32px;
 }
 
 .professional__img,
@@ -309,7 +308,7 @@ address > .social__items {
   }
 
   .nav__section {
-    font-size: 1em;
+    font-size: 1.5rem;
     margin-top: 0;
     min-width: 500px;
   }
@@ -429,7 +428,7 @@ address > .social__items {
   }
 
   .social__icon {
-    min-height: 50px;
+    min-height: 40px;
     padding-bottom: 0;
   }
 }
