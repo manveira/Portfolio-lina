@@ -1,13 +1,15 @@
 /* Document Styles */
 :root {
+  --background-header-footer: #DA627D;
+  --background-page: #FBD2D7;
+  --accent: #527A86;
   --text-dark: #55286F;
   --text-light: #F1FFFA;
-  --background-page: #FBD2D7;
-  --background-header-footer: #DA627D;
 }
 
 a {
   color: var(--text-dark);
+  text-decoration: none;
 }
 
 .l-body {
@@ -64,7 +66,6 @@ p {
 .header__description,
 .l-footer,
 .main__description,
-.main__link,
 .social__item,
 .work__code,
 .work__goal,
@@ -165,8 +166,7 @@ p {
 /* Heading */
 .header__description,
 .header__title,
-.main__heading,
-.main__link-group {
+.main__heading {
   text-align: center;
 }
 
@@ -189,7 +189,33 @@ p {
 
 .main__link-group {
   align-items: center;
+  background-color: var(--accent);
+  border: 3px solid var(--accent);
+  border-radius: 50px;
   display: flex;
+  width: 100%;
+  padding: 2%;
+}
+
+.main__link {
+  color: var(--text-light);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main__link-group:hover {
+  background-color: var(--background-page);
+  border: 3px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.main__link-group:hover .main__link {
+  color: var(--accent);
+}
+
+.main__link-group:hover .main__icon {
+  fill: var(--accent);
 }
 
 .work__professional-item,
@@ -274,17 +300,14 @@ address > .social__items {
 }
 
 .main__icon {
-  min-height: 50px;
-}
-
-.main__icon,
-.social__icon {
-  padding-right: 5%;
+  fill: var(--text-light);
+  padding: 0 5%;
 }
 
 .social__icon {
   display: block;
   fill: var(--text-dark);
+  padding-right: 5%;
 }
 
 .footer__social-icon {
@@ -371,9 +394,12 @@ address > .social__items {
     margin-top: 0;
   }
 
-  .main__heading,
-  .main__link-group {
+  .main__heading {
     text-align: left;
+  }
+
+  .main__link-group {
+    width: 65%;
   }
 
   .main__copy {
@@ -412,7 +438,7 @@ address > .social__items {
 
   /* Images */
   .main__icon {
-    padding-right: 2%;
+    padding: 0 5% 0 2%;
   }
 
   .professional__img {
@@ -436,7 +462,7 @@ address > .social__items {
 /* Reduced Motion */
 @media screen and (prefers-reduced-motion: reduce) {
 
-  /* Navigation */
+  .main__link-group:hover,
   .nav__menu-item::before {
     transition: none;
   }
