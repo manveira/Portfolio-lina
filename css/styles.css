@@ -215,7 +215,7 @@ p {
 .main__link-group:hover {
   background-color: var(--background-page);
   border: 3px solid var(--accent);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .main__link-group:hover .main__link {
