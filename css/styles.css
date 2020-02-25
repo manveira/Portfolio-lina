@@ -1,13 +1,15 @@
 /* Document Styles */
 :root {
+  --accent: #527A86;
+  --background-header-footer: #DA627D;
+  --background-page: #FBD2D7;
   --text-dark: #55286F;
   --text-light: #F1FFFA;
-  --background-page: #FBD2D7;
-  --background-header-footer: #DA627D;
 }
 
 a {
   color: var(--text-dark);
+  text-decoration: none;
 }
 
 .l-body {
@@ -64,7 +66,6 @@ p {
 .header__description,
 .l-footer,
 .main__description,
-.main__link,
 .social__item,
 .work__code,
 .work__goal,
@@ -94,21 +95,12 @@ p {
   position: relative;
 }
 
-.nav__menu-item::before {
-  background-color: var(--background-page);
-  bottom: 0;
-  content: '';
-  height: 2px;
-  left: 53%;
-  position: absolute;
-  width: 100%;
-  transform-origin: center;
-  transform: translate(-50%, 0) scaleX(0);
-  transition: transform 0.2s ease-in-out;
-}
-
-.nav__menu-item:hover::before {
-  transform: translate(-50%, 0) scaleX(1);
+.footer__social-icon a:focus,
+.nav__menu-name:focus,
+.nav__menu-item a:focus {
+    outline: dotted;
+    outline-color: var(--text-light);
+    outline-offset: .4rem;
 }
 
 .main-nav, .l-footer {
@@ -165,8 +157,7 @@ p {
 /* Heading */
 .header__description,
 .header__title,
-.main__heading,
-.main__link-group {
+.main__heading {
   text-align: center;
 }
 
@@ -189,7 +180,33 @@ p {
 
 .main__link-group {
   align-items: center;
+  background-color: var(--accent);
+  border: 3px solid var(--accent);
+  border-radius: 50px;
   display: flex;
+  width: 100%;
+  padding: 2%;
+}
+
+.main__link {
+  color: var(--text-light);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main__link-group:hover {
+  background-color: var(--background-page);
+  border: 3px solid var(--accent);
+  transition: all 0.3s ease-in-out;
+}
+
+.main__link-group:hover .main__link {
+  color: var(--accent);
+}
+
+.main__link-group:hover .main__icon {
+  fill: var(--accent);
 }
 
 .work__professional-item,
@@ -243,6 +260,7 @@ address > .social__items {
 .social__item {
   display: table;
   padding: 2%;
+  position: relative;
 }
 
 /* Footer */
@@ -274,17 +292,14 @@ address > .social__items {
 }
 
 .main__icon {
-  min-height: 50px;
-}
-
-.main__icon,
-.social__icon {
-  padding-right: 5%;
+  fill: var(--text-light);
+  padding: 0 5%;
 }
 
 .social__icon {
   display: block;
   fill: var(--text-dark);
+  padding-right: 5%;
 }
 
 .footer__social-icon {
@@ -292,10 +307,52 @@ address > .social__items {
   min-height: 32px;
 }
 
+.footer__social-icon:hover {
+  background-color: var(--text-dark);
+  border-radius: 20%;
+  transition: all 0.3s ease-in-out;
+}
+
 .professional__img,
 .personal__img {
   max-width: 100%;
   margin-left: 0;
+}
+
+/* Animations */
+.nav__menu-item:before {
+  background-color: var(--background-page);
+  left: 53%;
+  width: 100%;
+  transform-origin: center;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social__item:before {
+  background-color: var(--text-dark);
+  left: 35%;
+  width: 65%;
+  transform: translate(-50%, 0) scaleX(0);
+  transform-origin: left;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav__menu-item:before,
+.social__item:before {
+  bottom: 0;
+  content: '';
+  height: 2px;
+  position: absolute;
+  transform: translate(-50%, 0) scaleX(0);
+}
+
+.nav__menu-item:hover:before,
+.social__item:hover:before {
+  transform: translate(-50%, 0) scaleX(1);
 }
 
 /* Desktop Styles */
@@ -371,9 +428,12 @@ address > .social__items {
     margin-top: 0;
   }
 
-  .main__heading,
-  .main__link-group {
+  .main__heading {
     text-align: left;
+  }
+
+  .main__link-group {
+    width: 65%;
   }
 
   .main__copy {
@@ -412,7 +472,7 @@ address > .social__items {
 
   /* Images */
   .main__icon {
-    padding-right: 2%;
+    padding: 0 5% 0 2%;
   }
 
   .professional__img {
@@ -436,8 +496,13 @@ address > .social__items {
 /* Reduced Motion */
 @media screen and (prefers-reduced-motion: reduce) {
 
-  /* Navigation */
-  .nav__menu-item::before {
+  .footer__social-icon:hover,
+  .main__link-group:hover,
+  .nav__meun-item:before,
+  .nav__menu-item:hover:before,
+  .social__item:before,
+  .social__item:hover:before {
     transition: none;
+    transition-duration: 0.001s;;
   }
 }
