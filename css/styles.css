@@ -325,6 +325,9 @@ address > .social__items {
   left: 53%;
   width: 100%;
   transform-origin: center;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .social__item:before {
@@ -345,9 +348,6 @@ address > .social__items {
   height: 2px;
   position: absolute;
   transform: translate(-50%, 0) scaleX(0);
-  -webkit-transition: transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
 }
 
 .nav__menu-item:hover:before,
