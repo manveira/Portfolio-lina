@@ -323,6 +323,12 @@ address > .social__items {
   min-height: 32px;
 }
 
+.footer__social-icon:hover {
+  background-color: var(--text-dark);
+  border-radius: 20%;
+  transition: all 0.3s ease-in-out;
+}
+
 .professional__img,
 .personal__img {
   max-width: 100%;
