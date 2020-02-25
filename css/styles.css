@@ -476,6 +476,7 @@ address > .social__items {
 /* Reduced Motion */
 @media screen and (prefers-reduced-motion: reduce) {
 
+  .footer__social-icon:hover,
   .main__link-group:hover,
   .nav__menu-item::before {
     transition: none;
