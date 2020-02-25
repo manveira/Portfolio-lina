@@ -95,23 +95,6 @@ p {
   position: relative;
 }
 
-.nav__menu-item::before {
-  background-color: var(--background-page);
-  bottom: 0;
-  content: '';
-  height: 2px;
-  left: 53%;
-  position: absolute;
-  width: 100%;
-  transform-origin: center;
-  transform: translate(-50%, 0) scaleX(0);
-  transition: transform 0.2s ease-in-out;
-}
-
-.nav__menu-item:hover::before {
-  transform: translate(-50%, 0) scaleX(1);
-}
-
 .footer__social-icon a:focus,
 .nav__menu-name:focus,
 .nav__menu-item a:focus {
@@ -277,6 +260,7 @@ address > .social__items {
 .social__item {
   display: table;
   padding: 2%;
+  position: relative;
 }
 
 /* Footer */
@@ -333,6 +317,42 @@ address > .social__items {
 .personal__img {
   max-width: 100%;
   margin-left: 0;
+}
+
+/* Animations */
+.nav__menu-item:before {
+  background-color: var(--background-page);
+  left: 53%;
+  width: 100%;
+  transform-origin: center;
+}
+
+.social__item:before {
+  background-color: var(--text-dark);
+  left: 35%;
+  width: 65%;
+  transform: translate(-50%, 0) scaleX(0);
+  transform-origin: left;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav__menu-item:before,
+.social__item:before {
+  bottom: 0;
+  content: '';
+  height: 2px;
+  position: absolute;
+  transform: translate(-50%, 0) scaleX(0);
+  -webkit-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav__menu-item:hover:before,
+.social__item:hover:before {
+  transform: translate(-50%, 0) scaleX(1);
 }
 
 /* Desktop Styles */
@@ -478,7 +498,11 @@ address > .social__items {
 
   .footer__social-icon:hover,
   .main__link-group:hover,
-  .nav__menu-item::before {
+  .nav__meun-item:before,
+  .nav__menu-item:hover:before,
+  .social__item:before,
+  .social__item:hover:before {
     transition: none;
+    transition-duration: 0.001s;;
   }
 }
