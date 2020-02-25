@@ -112,6 +112,14 @@ p {
   transform: translate(-50%, 0) scaleX(1);
 }
 
+.footer__social-icon a:focus,
+.nav__menu-name:focus,
+.nav__menu-item a:focus {
+    outline: dotted;
+    outline-color: var(--text-light);
+    outline-offset: .4rem;
+}
+
 .main-nav, .l-footer {
   align-items: center;
   display: flex;
