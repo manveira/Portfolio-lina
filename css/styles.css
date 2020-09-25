@@ -9,7 +9,6 @@
 
 a {
   color: var(--text-dark);
-  text-decoration: none;
 }
 
 .l-body {
@@ -261,6 +260,10 @@ address > .social__items {
   display: table;
   padding: 2%;
   position: relative;
+}
+
+.social__link {
+  text-decoration: none;
 }
 
 /* Footer */
