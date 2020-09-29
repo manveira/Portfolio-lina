@@ -192,6 +192,7 @@ p {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .main__link-group:hover {
