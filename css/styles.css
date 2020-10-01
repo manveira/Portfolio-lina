@@ -2,14 +2,13 @@
 :root {
   --accent: #527A86;
   --background-header-footer: #DA627D;
-  --background-page: #FBD2D7;
+  --background-page: #F1FFFA;
   --text-dark: #55286F;
   --text-light: #F1FFFA;
 }
 
 a {
   color: var(--text-dark);
-  text-decoration: none;
 }
 
 .l-body {
@@ -193,6 +192,7 @@ p {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .main__link-group:hover {
@@ -261,6 +261,10 @@ address > .social__items {
   display: table;
   padding: 2%;
   position: relative;
+}
+
+.social__link {
+  text-decoration: none;
 }
 
 /* Footer */
