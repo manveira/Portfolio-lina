@@ -70,7 +70,9 @@ p {
 .work__goal,
 .work__link,
 .work__tech-stack,
-.work__design {
+.work__design,
+.work__work-experience,
+.work__work-experience-list {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
 }
@@ -222,7 +224,8 @@ p {
 .work__tech-stack,
 .work__design,
 .work__goal,
-.work__code {
+.work__code,
+.work__work-experience-list {
   line-height: 1.4;
 }
 
