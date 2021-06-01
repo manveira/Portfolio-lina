@@ -58,6 +58,15 @@ p {
 }
 
 /* Content */
+.description,
+.header__body--description,
+.header__description,
+.main__description,
+.work__design,
+.work__goal {
+  line-height: 1.5;
+}
+
 .date,
 .description,
 .footer__social,
