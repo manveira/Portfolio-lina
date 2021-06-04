@@ -60,6 +60,15 @@ p {
 }
 
 /* Content */
+.description,
+.header__body--description,
+.header__description,
+.main__description,
+.work__design,
+.work__goal {
+  line-height: 1.5;
+}
+
 .date,
 .description,
 .footer__social,
@@ -179,7 +188,7 @@ p {
 /* Main */
 .l-main__experience {
   display: block;
-  margin: 10%;
+  margin: 0 10%;
 }
 
 .main__link-group {
@@ -444,10 +453,6 @@ address > .social__items {
 
   .l-main.contact {
     margin: 0 10% 10%;
-  }
-
-  .l-main__experience {
-    margin: 0 15% 5%;
   }
 
   .main__contact,
