@@ -16,8 +16,8 @@ a {
   background: var(--background-page);
   color: var(--text-dark);
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
 }
 
 /* Headings */
@@ -60,6 +60,15 @@ p {
 }
 
 /* Content */
+.description,
+.header__body--description,
+.header__description,
+.main__description,
+.work__design,
+.work__goal {
+  line-height: 1.5;
+}
+
 .date,
 .description,
 .footer__social,
@@ -179,7 +188,7 @@ p {
 /* Main */
 .l-main__experience {
   display: block;
-  margin: 10%;
+  margin: 0 10%;
 }
 
 .main__link-group {
@@ -245,8 +254,6 @@ p {
 }
 
 .work__projects {
-  display: flex;
-  justify-content: center;
   list-style-type: none;
   padding: 0;
 }
@@ -424,14 +431,16 @@ address > .social__items {
   }
 
   /* Main */
+  .header__body,
   .l-main,
-  .work__personal-items,
-  .header__body {
+  .experience__featured,
+  .work__personal-items {
     display: grid;
   }
 
-  .l-main,
-  .header__body {
+  .experience__featured,
+  .header__body,
+  .l-main {
     align-items: center;
     column-gap: 10%;
     grid-auto-columns: 1fr;
@@ -444,10 +453,6 @@ address > .social__items {
 
   .l-main.contact {
     margin: 0 10% 10%;
-  }
-
-  .l-main__experience {
-    margin: 0 15% 5%;
   }
 
   .main__contact,
@@ -490,6 +495,11 @@ address > .social__items {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .work__projects {
+    display: flex;
+    justify-content: center;
+  }
+
   .work__year,
   .work__tech-stack,
   .work__design,
@@ -504,6 +514,9 @@ address > .social__items {
     align-items: center;
   }
 
+  .experience__featured {
+    justify-items: center;
+  }
   /* Images */
   .main__icon {
     padding: 0 5% 0 2%;
