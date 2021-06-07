@@ -77,6 +77,7 @@ p {
 .l-footer,
 .main__description,
 .social__item,
+.volunteer__link,
 .work__code,
 .work__goal,
 .work__link,
@@ -352,6 +353,7 @@ address > .social__items {
 
 .professional__img,
 .personal__img,
+.volunteer__preview,
 .work__project-preview {
   border-radius: 8px;
   box-shadow: 0px 5px 10px 5px var(--shadow);
@@ -459,7 +461,9 @@ address > .social__items {
   .main__copy,
   .main__image,
   .header__body--description,
-  .header__body--image {
+  .header__body--image,
+  .volunteer__preview,
+  .experience__featured-copy {
     grid-row: 1;
   }
 
@@ -517,6 +521,17 @@ address > .social__items {
   .experience__featured {
     justify-items: center;
   }
+
+  .volunteer__preview {
+    width: 50%;
+    height: auto;
+  }
+
+  /* target 2nd preview */
+  .volunteer__preview:nth-child(2) {
+    width: 100%;
+  }
+
   /* Images */
   .main__icon {
     padding: 0 5% 0 2%;
