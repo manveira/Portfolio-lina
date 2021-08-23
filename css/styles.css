@@ -192,7 +192,8 @@ p {
   margin: 0 10%;
 }
 
-.main__link-group {
+.main__link-group,
+.work__link {
   align-items: center;
   background-color: var(--accent);
   border: 3px solid var(--accent);
@@ -202,7 +203,8 @@ p {
   padding: 2%;
 }
 
-.main__link {
+.main__link,
+.work__link {
   color: var(--button-text);
   font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
@@ -210,7 +212,8 @@ p {
   text-decoration: none;
 }
 
-.main__link-group:hover {
+.main__link-group:hover,
+.work__link:hover {
   background-color: var(--background-page);
   border: 3px solid var(--accent);
   transition: all 0.3s ease-in-out;
@@ -345,19 +348,18 @@ address > .social__items {
   transition: all 0.3s ease-in-out;
 }
 
-.professional__img,
+.professional__img {
+  display: block;
+  margin: auto;
+}
+
 .personal__img {
-  max-width: 100%;
   margin-left: 0;
 }
 
 .professional__img,
-.personal__img,
-.work__project-preview {
-  border-radius: 8px;
-  box-shadow: 0px 5px 10px 5px var(--shadow);
-  -webkit-box-shadow: 0px 5px 10px 5px var(--shadow);
-  -moz-box-shadow: 0px 5px 10px 5px var(--shadow);
+.personal__img {
+  max-width: 100%;
 }
 
 
@@ -518,6 +520,15 @@ address > .social__items {
   .experience__featured {
     justify-items: center;
   }
+
+  .work__link {
+    margin-top: 1em;
+    padding-left: 1.3em;
+    text-align: center;
+    width: 12em;
+  }
+
+
   /* Images */
   .main__icon {
     padding: 0 5% 0 2%;
@@ -541,7 +552,8 @@ address > .social__items {
   .nav__meun-item:before,
   .nav__menu-item:hover:before,
   .social__item:before,
-  .social__item:hover:before {
+  .social__item:hover:before,
+  .work__link {
     transition: none;
     transition-duration: 0.001s;;
   }
