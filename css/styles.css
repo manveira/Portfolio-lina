@@ -1,10 +1,11 @@
 /* Document Styles */
 :root {
   --accent: #527A86;
-  --background-header-footer: #DA627D;
-  --background-page: #F1FFFA;
+  --background-header-footer: #F5E7E7;
+  --background-page: #FFFAFA;
+  --button-text: #FFFAFA;
   --text-dark: #55286F;
-  --text-light: #F1FFFA;
+  --text-light: #527A86;
   --shadow: #BEC8C4;
 }
 
@@ -41,18 +42,16 @@ p {
   font-size: 1rem;
 }
 
-.copyright,
 .divider__year,
 .header__title,
 .l-footer,
 .main__heading,
-.main-nav,
 .main__work,
 .organization,
 .work__projects,
 .work__title,
 .work__year {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .nav__menu-name{
@@ -69,6 +68,7 @@ p {
   line-height: 1.5;
 }
 
+.copyright,
 .date,
 .description,
 .footer__social,
@@ -76,6 +76,7 @@ p {
 .header__description,
 .l-footer,
 .main__description,
+.main-nav,
 .social__item,
 .volunteer__link,
 .work__code,
@@ -85,7 +86,7 @@ p {
 .work__design,
 .work__work-experience,
 .work__work-experience-list {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Quicksand', serif;
   font-size: 1.1rem;
 }
 
@@ -203,7 +204,7 @@ p {
 }
 
 .main__link {
-  color: var(--text-light);
+  color: var(--button-text);
   font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
@@ -329,7 +330,7 @@ address > .social__items {
 }
 
 .main__icon {
-  fill: var(--text-light);
+  fill: var(--button-text);
   padding: 0 5%;
 }
 
@@ -379,7 +380,7 @@ address > .social__items {
 
 /* Animations */
 .nav__menu-item:before {
-  background-color: var(--background-page);
+  background-color: var(--accent);
   left: 53%;
   width: 100%;
   transform-origin: center;
