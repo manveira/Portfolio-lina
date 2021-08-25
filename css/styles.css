@@ -78,6 +78,7 @@ p {
 .main__description,
 .main-nav,
 .social__item,
+.volunteer__link,
 .work__code,
 .work__goal,
 .work__link,
@@ -362,6 +363,16 @@ address > .social__items {
   max-width: 100%;
 }
 
+.volunteer__preview {
+  width: 50%;
+  height: auto;
+  order: 2;
+}
+
+.volunteer__preview:nth-child(2) {
+  width: 100%;
+}
+
 
 /* Animations */
 .nav__menu-item:before {
@@ -462,7 +473,9 @@ address > .social__items {
   .main__copy,
   .main__image,
   .header__body--description,
-  .header__body--image {
+  .header__body--image,
+  .volunteer__preview,
+  .experience__featured-copy {
     grid-row: 1;
   }
 
@@ -541,6 +554,14 @@ address > .social__items {
   .social__icon {
     min-height: 40px;
     padding-bottom: 0;
+  }
+
+  .volunteer__preview {
+    order: 0;
+  }
+
+  .volunteer__preview:nth-child(2) {
+    grid-column: 2;
   }
 }
 
