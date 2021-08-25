@@ -153,7 +153,7 @@ p {
 }
 
 .nav__menu-item {
-  margin: 0 .5em;
+  margin: 0 .7em;
 }
 
 .nav__menu-item a,
@@ -188,8 +188,12 @@ p {
 
 
 /* Main */
-.l-main__experience {
+.l-main__experience,
+.work__projects {
   display: block;
+}
+
+.l-main__experience {
   margin: 0 10%;
 }
 
@@ -233,10 +237,6 @@ p {
   margin-bottom: 10%;
 }
 
-.work__title {
-  margin-bottom: 0;
-}
-
 .work__year,
 .work__tech-stack,
 .work__design,
@@ -247,10 +247,13 @@ p {
 }
 
 .work__year,
-.work__goal,
 .work__link,
 .work__code {
   margin: 0;
+}
+
+.work__goal {
+  margin: 0 0 1.2em;
 }
 
 .work__tech-stack,
@@ -258,15 +261,8 @@ p {
   margin: 5% 0 0;
 }
 
-.work__projects {
-  list-style-type: none;
-  padding: 0;
-}
-
 .work__project-preview {
-  max-width: 250px;
-  height: auto;
-  margin-bottom: 20px;
+    width: 100%;
 }
 
 .divider__year,
@@ -493,7 +489,7 @@ address > .social__items {
   }
 
   .main__link-group {
-    width: 65%;
+    width: 20em;
   }
 
   .main__copy {
@@ -517,8 +513,18 @@ address > .social__items {
   }
 
   .work__projects {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+  }
+
+  .work__project-preview {
+    justify-self: center;
+  }
+
+  .work__project-preview:last-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .work__year,
