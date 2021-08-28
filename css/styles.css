@@ -154,10 +154,11 @@ h3.work__title {
 
 .nav__menu {
   align-items: center;
+  justify-content: space-around;
 }
 
 .nav__menu-item {
-  margin: 0 .7em;
+    margin: 0 .3em;
 }
 
 .nav__menu-item a,
@@ -208,7 +209,6 @@ h3.work__title {
   border: 3px solid var(--accent);
   border-radius: 50px;
   display: flex;
-  width: 100%;
   padding: 2%;
 }
 
@@ -372,15 +372,20 @@ address > .social__items {
   margin-left: 0;
 }
 
+.personal__img:not(:last-of-type) {
+    margin-bottom: 1.5em;
+}
+
 .professional__img,
 .personal__img {
   max-width: 100%;
 }
 
 .volunteer__preview {
-  width: 50%;
+  align-self: center;
   height: auto;
   order: 2;
+  width: 50%;
 }
 
 .volunteer__preview:nth-child(2) {
@@ -441,6 +446,10 @@ address > .social__items {
 
   .nav__menu {
     justify-content: space-between;
+  }
+
+  .nav__menu-item {
+    margin: 0 .7em;
   }
 
   /* Heading */
