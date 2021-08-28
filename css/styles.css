@@ -232,7 +232,8 @@ h3.work__title {
   transition: all 0.3s ease-in-out;
 }
 
-.main__link-group:hover .main__link {
+.main__link-group:hover .main__link,
+.work__link:hover {
   color: var(--accent);
 }
 
@@ -504,12 +505,18 @@ address > .social__items {
     width: 20em;
   }
 
+  .main__copy > .main__link-group {
+    align-self: center;
+  }
+
   .work__personal-item > .main__link-group {
     width: 11em;
   }
 
   .main__copy {
-    display: block;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
     line-height: 1.4;
   }
 
