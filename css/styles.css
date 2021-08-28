@@ -1,10 +1,11 @@
 /* Document Styles */
 :root {
   --accent: #527A86;
-  --background-header-footer: #DA627D;
-  --background-page: #F1FFFA;
+  --background-header-footer: #F5E7E7;
+  --background-page: #FFFAFA;
+  --button-text: #FFFAFA;
   --text-dark: #55286F;
-  --text-light: #F1FFFA;
+  --text-light: #527A86;
   --shadow: #BEC8C4;
 }
 
@@ -41,18 +42,16 @@ p {
   font-size: 1rem;
 }
 
-.copyright,
 .divider__year,
 .header__title,
 .l-footer,
 .main__heading,
-.main-nav,
 .main__work,
 .organization,
 .work__projects,
 .work__title,
 .work__year {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .nav__menu-name{
@@ -69,6 +68,7 @@ p {
   line-height: 1.5;
 }
 
+.copyright,
 .date,
 .description,
 .footer__social,
@@ -76,6 +76,7 @@ p {
 .header__description,
 .l-footer,
 .main__description,
+.main-nav,
 .social__item,
 .volunteer__link,
 .work__code,
@@ -85,7 +86,7 @@ p {
 .work__design,
 .work__work-experience,
 .work__work-experience-list {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Quicksand', serif;
   font-size: 1.1rem;
 }
 
@@ -101,6 +102,10 @@ p {
 .l-main.contact {
   margin: 5%;
   overflow: hidden;
+}
+
+h3.work__title {
+  margin-bottom: .1em;
 }
 
 /* Navigation */
@@ -149,10 +154,11 @@ p {
 
 .nav__menu {
   align-items: center;
+  justify-content: space-around;
 }
 
 .nav__menu-item {
-  margin: 0 .5em;
+    margin: 0 .3em;
 }
 
 .nav__menu-item a,
@@ -187,36 +193,47 @@ p {
 
 
 /* Main */
-.l-main__experience {
+.l-main__experience,
+.work__projects {
   display: block;
+}
+
+.l-main__experience {
   margin: 0 10%;
 }
 
-.main__link-group {
+.main__link-group,
+.work__link {
   align-items: center;
   background-color: var(--accent);
   border: 3px solid var(--accent);
   border-radius: 50px;
   display: flex;
-  width: 100%;
   padding: 2%;
 }
 
-.main__link {
-  color: var(--text-light);
+.work__personal-item > .main__link-group {
+    width: 60%;
+}
+
+.main__link,
+.work__link {
+  color: var(--button-text);
   font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
 }
 
-.main__link-group:hover {
+.main__link-group:hover,
+.work__link:hover {
   background-color: var(--background-page);
   border: 3px solid var(--accent);
   transition: all 0.3s ease-in-out;
 }
 
-.main__link-group:hover .main__link {
+.main__link-group:hover .main__link,
+.work__link:hover {
   color: var(--accent);
 }
 
@@ -229,10 +246,6 @@ p {
   margin-bottom: 10%;
 }
 
-.work__title {
-  margin-bottom: 0;
-}
-
 .work__year,
 .work__tech-stack,
 .work__design,
@@ -243,26 +256,22 @@ p {
 }
 
 .work__year,
-.work__goal,
 .work__link,
 .work__code {
   margin: 0;
 }
 
-.work__tech-stack,
-.work__design {
-  margin: 5% 0 0;
+.work__goal {
+  margin: 0 0 1.2em;
 }
 
-.work__projects {
-  list-style-type: none;
-  padding: 0;
+.work__tech-stack,
+.work__design {
+  margin: 5% 0;
 }
 
 .work__project-preview {
-  max-width: 250px;
-  height: auto;
-  margin-bottom: 20px;
+    width: 100%;
 }
 
 .divider__year,
@@ -329,7 +338,7 @@ address > .social__items {
 }
 
 .main__icon {
-  fill: var(--text-light);
+  fill: var(--button-text);
   padding: 0 5%;
 }
 
@@ -350,26 +359,33 @@ address > .social__items {
   transition: all 0.3s ease-in-out;
 }
 
-.professional__img,
+.professional__img {
+  display: block;
+  margin: auto;
+}
+
+.personal__images {
+  display: block;
+}
+
 .personal__img {
-  max-width: 100%;
   margin-left: 0;
 }
 
+.personal__img:not(:last-of-type) {
+    margin-bottom: 1.5em;
+}
+
 .professional__img,
-.personal__img,
-.volunteer__preview,
-.work__project-preview {
-  border-radius: 8px;
-  box-shadow: 0px 5px 10px 5px var(--shadow);
-  -webkit-box-shadow: 0px 5px 10px 5px var(--shadow);
-  -moz-box-shadow: 0px 5px 10px 5px var(--shadow);
+.personal__img {
+  max-width: 100%;
 }
 
 .volunteer__preview {
-  width: 50%;
+  align-self: center;
   height: auto;
   order: 2;
+  width: 50%;
 }
 
 .volunteer__preview:nth-child(2) {
@@ -379,7 +395,7 @@ address > .social__items {
 
 /* Animations */
 .nav__menu-item:before {
-  background-color: var(--background-page);
+  background-color: var(--accent);
   left: 53%;
   width: 100%;
   transform-origin: center;
@@ -430,6 +446,10 @@ address > .social__items {
 
   .nav__menu {
     justify-content: space-between;
+  }
+
+  .nav__menu-item {
+    margin: 0 .7em;
   }
 
   /* Heading */
@@ -491,11 +511,21 @@ address > .social__items {
   }
 
   .main__link-group {
-    width: 65%;
+    width: 20em;
+  }
+
+  .main__copy > .main__link-group {
+    align-self: center;
+  }
+
+  .work__personal-item > .main__link-group {
+    width: 11em;
   }
 
   .main__copy {
-    display: block;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
     line-height: 1.4;
   }
 
@@ -511,12 +541,30 @@ address > .social__items {
 
   .work__personal-items {
     column-gap: 10%;
+  }
+
+  .work__personal-items.code {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .work__personal-items.design {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .work__projects {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+  }
+
+  .work__project-preview {
+    justify-self: center;
+  }
+
+  .design > .work__personal-item:first-of-type,
+  .work__project-preview:last-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .work__year,
@@ -537,14 +585,26 @@ address > .social__items {
     justify-items: center;
   }
 
-
-  /* Images */
-  .main__icon {
-    padding: 0 5% 0 2%;
+  .work__link {
+    margin-top: 1em;
+    padding-left: 1.3em;
+    text-align: center;
+    width: 12em;
   }
 
   .codepen {
     margin-left: 0;
+  }
+
+  .personal__images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Images */
+  .main__icon {
+    padding: 0 5% 0 2%;
   }
 
   .social__icon {
@@ -569,7 +629,8 @@ address > .social__items {
   .nav__meun-item:before,
   .nav__menu-item:hover:before,
   .social__item:before,
-  .social__item:hover:before {
+  .social__item:hover:before,
+  .work__link {
     transition: none;
     transition-duration: 0.001s;;
   }
